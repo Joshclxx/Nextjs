@@ -26,7 +26,10 @@ body {
     @apply border-green-500 bg-green-400 px-8 py-5 text-gray-700;
   }
   .btn_dark_green { 
-    @apply bg-green-900 px-8 py-4 text-white transition-all hover:bg-black;
+    @apply bg-green-900 px-8 py-3 text-white transition-all hover:bg-black;
+  }
+  .btn_dark { 
+    @apply bg-green-900 px-8 py-1 text-white transition-all hover:bg-black;
   }
   .btn_dark_green_outline  { 
     @apply border-gray-200 bg-green-900 px-8 py-5 text-white;
@@ -163,4 +166,19 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Image Container */
+.image-container {
+  @apply flex flex-col items-center p-5 bg-gradient-to-r from-[#CEC2EB] to-[#B19CD7] shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer h-full w-full col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3;
+}
+
+/* Text Button */
+.text-btn {
+  @apply flexBetween w-16 text-blue-700 hover:text-black;
+}
+
+/* Buy Button */
+.buy-btn {
+  @apply flex justify-end w-[150px] mt-3;
 }
