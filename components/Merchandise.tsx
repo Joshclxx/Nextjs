@@ -1,37 +1,75 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import Button from "./Button";
+import ImageContainer from "./ImageContainer";
 
 const page = () => {
+  const merchandise = [
+    {
+      imageSrc: "/merch-1.png",
+      imageAlt: "merch-1",
+      imageHeight: 80,
+      imageWidth: 100,
+      title: "SipEase Mug",
+      price: 879.45,
+      description: "Your go-to mug for cozy mornings and energizing breaks.",
+    },
+    {
+      imageSrc: "/merch-2.png",
+      imageAlt: "merch-2",
+      imageHeight: 80,
+      imageWidth: 100,
+      title: "ChillFlow Cold Cup",
+      price: 1044.45,
+      description: "Keep your drinks refreshingly cool, anytime, anywhere.",
+    },
+    {
+      imageSrc: "/merch-3.png",
+      imageAlt: "merch-3",
+      imageHeight: 80,
+      imageWidth: 100,
+      title: "HydroStride Bottle",
+      price: 1264.45,
+      description: "Stay hydrated on the move with this sleek, durable bottle.",
+    },
+    {
+      imageSrc: "/merch-4.png",
+      imageAlt: "merch-4",
+      imageHeight: 80,
+      imageWidth: 100,
+      title: "BrewMate Tumbler",
+      price: 1099.45,
+      description:
+        "Keep your drinks hot or cold for hours with styles and ease.",
+    },
+  ];
+
   return (
-
-   <section className="max-container padding-container flex flex-col bg-gradient-to-r from-[#536CB5] to-[#98A5C0] h-full w-full gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-
-
-    <div className="flex flex-col items-start mt-5">
-      <h2 className="bold-32 mb-1"> 
-        MERCHANDISE
-        <br />
-        
-      </h2>
-    </div>
-    
-      <div className="flex flex-row justify-between gap-9">
-        <div className="flex flex-col items-center">
-          <Image 
-            src="/"
-            alt=""
-            width={80}
-            height={100}
-            />  
-            <p className="regular-16 text-center mt-5">
-              
-              <br />
-              ₱
-            </p>
-          </div>
+    <section className="w-full bg-gradient py-10 pb-32 md:gap-28 lg:py-20">
+      <div className="max-w-[1440px] mx-auto flex flex-col gap-20 px-4 xl:flex-row">
+        <div className="flex flex-col items-start mt-5">
+          <h2 className="bold-32 mb-1">
+            MERCHANDISE
+            <br />
+          </h2>
         </div>
-  </section>
-  )
-}
 
-export default page
+        <div className="grid grid-cols-12 sm:col-span-6 lg:col-span-3 flex-row justify-between gap-5">
+          {merchandise.map((merchandise, index) => (
+            <ImageContainer
+              imageSrc={merchandise.imageSrc}
+              imageAlt={merchandise.imageAlt}
+              imageHeight={merchandise.imageHeight}
+              imageWidth={merchandise.imageWidth}
+              title={merchandise.title}
+              price={merchandise.price}
+              description={merchandise.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default page;

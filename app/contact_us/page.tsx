@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const page = () => {
-  return (
-    <div>Contact Us</div>
-  )
-}
+  return;
 
-export default page
+  <section className="bg-gradient">
+    <div className="text-color">
+      <p>Contact US</p>
+    </div>
+  </section>;
+};
+
+export default page;

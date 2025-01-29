@@ -5,11 +5,11 @@ import Merchandise from "@/components/Merchandise";
 
 export default function Home() {
   return (
-      <>
-        <Drink />
-        <Food />
-        <Athome />
-        <Merchandise />
-      </>
-  )
+    <>
+      <Drink />
+      <Food />
+      <Merchandise />
+      <Athome />
+    </>
+  );
 }

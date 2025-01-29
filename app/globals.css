@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -16,25 +15,25 @@ body {
 }
 
 @layer utilities {
-  .btn_white { 
+  .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-500;
   }
-  .btn_white_text  { 
+  .btn_white_text {
     @apply border-white bg-white px-8 py-3 text-gray-900;
   }
-  .btn_green  { 
+  .btn_green {
     @apply border-green-500 bg-green-400 px-8 py-5 text-gray-700;
   }
-  .btn_dark_green { 
+  .btn_dark_green {
     @apply bg-green-900 px-8 py-3 text-white transition-all hover:bg-black;
   }
-  .btn_dark { 
-    @apply bg-green-900 px-8 py-1 text-white transition-all hover:bg-black;
+  .btn_dark {
+    @apply bg-gradient-to-r from-[#239EAB] to-[#3DB2C0] px-8 py-1 text-[#1B4E60] transition-all;
   }
-  .btn_dark_green_outline  { 
+  .btn_dark_green_outline {
     @apply border-gray-200 bg-green-900 px-8 py-5 text-white;
   }
-  
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
@@ -150,7 +149,7 @@ body {
 
   /* Background Pattern 2 */
   .bg-pattern-2 {
-    background-image: url('/images/pattern-image.png'); 
+    background-image: url("/images/pattern-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,7 +169,7 @@ body {
 
 /* Image Container */
 .image-container {
-  @apply flex flex-col items-center p-5 bg-gradient-to-r from-[#CEC2EB] to-[#B19CD7] shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer h-full w-full col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3;
+  @apply flex flex-col items-center p-5 bg-gradient-to-r from-[#6ED9E9] to-[#48BCCA] shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer h-full w-full col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3;
 }
 
 /* Text Button */
@@ -181,4 +180,19 @@ body {
 /* Buy Button */
 .buy-btn {
   @apply flex justify-end w-[150px] mt-3;
+}
+
+/* Gradient Background */
+.bg-gradient {
+  @apply bg-gradient-to-r from-[#239EAB] to-[#43B8C6];
+}
+
+/* Gradient Background For Navbar and Footer */
+.bg-gradient-1 {
+  @apply bg-gradient-to-r from-[#31A9B6] to-[#4CBECD];
+}
+
+/* Font Color */
+.text-color {
+  @apply text-[#440F3B];
 }
