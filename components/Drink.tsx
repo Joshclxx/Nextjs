@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import ImageContainer from "./ImageContainer";
-import { animate, inView } from "framer-motion";
 
 const page = () => {
   const drinks = [

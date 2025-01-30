@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <section className="max-container padding-container flex flex-col bg-gradient h-full w-full gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-      <h1 className="bold-40 lg:bold-80 text-white text-center flex flex-col">
+      <h1 className="bold-40 lg:bold-80 text-white text-center flex flex-col w-full">
         ABOUT HEEBREW
       </h1>
 
