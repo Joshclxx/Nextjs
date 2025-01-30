@@ -69,6 +69,7 @@ const page = () => {
         <div className="grid grid-cols-12 sm:col-span-6 lg:col-span-3 flex-row justify-between gap-5">
           {drinks.map((drink, index) => (
             <ImageContainer
+              key={index}
               imageSrc={drink.imageSrc}
               imageAlt={drink.imageAlt}
               imageHeight={drink.imageHeight}

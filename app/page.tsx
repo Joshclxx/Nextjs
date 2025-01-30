@@ -5,14 +5,10 @@ import Camp from "@/components/Camp";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
 import Guide from "@/components/Guide";
-import { useInView } from "framer-motion";
 import Hero from "@/components/Hero";
 import React from "react";
 
 export default function Home() {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,

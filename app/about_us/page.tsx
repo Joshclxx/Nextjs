@@ -18,8 +18,8 @@ const page = () => {
           <br />
           Our journey began with a simple belief: that a perfect cup of coffee
           can bring people together. Inspired by the warmth of HeeBrew
-          hospitality, we've designed a cozy space where every visit feels like
-          coming home.
+          hospitality, we&lsquo;ve designed a cozy space where every visit feels
+          like coming home.
           <br />
           <br />
           Discover our carefully crafted coffee blends that awaken your senses

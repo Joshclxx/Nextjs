@@ -69,6 +69,7 @@ const page = () => {
         <div className="grid grid-cols-12 sm:col-span-6 lg:col-span-3 flex-row justify-between gap-5">
           {food.map((food, index) => (
             <ImageContainer
+              key={index}
               imageSrc={food.imageSrc}
               imageAlt={food.imageAlt}
               imageHeight={food.imageHeight}

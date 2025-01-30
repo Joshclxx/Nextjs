@@ -3,7 +3,6 @@
 import { motion, useSpring, useScroll } from "motion/react";
 import React, { useState } from "react";
 import Image from "next/image";
-import { useInView } from "framer-motion";
 import Button from "./Button";
 
 type ImageContainerProps = {
@@ -28,7 +27,6 @@ const ImageContainer = ({
   const [showDetails, setShowDetails] = useState(false);
 
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
