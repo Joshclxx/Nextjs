@@ -1,6 +1,5 @@
 import Drink from "@/components/Drink";
 import Food from "@/components/Food";
-import Athome from "@/components/Athome";
 import Merchandise from "@/components/Merchandise";
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
       <Drink />
       <Food />
       <Merchandise />
-      <Athome />
     </>
   );
 }

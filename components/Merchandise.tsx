@@ -1,6 +1,7 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
-import Button from "./Button";
 import ImageContainer from "./ImageContainer";
 
 const page = () => {
@@ -47,11 +48,19 @@ const page = () => {
   return (
     <section className="w-full bg-gradient py-10 pb-32 md:gap-28 lg:py-20">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-20 px-4 xl:flex-row">
-        <div className="flex flex-col items-start mt-5">
-          <h2 className="bold-32 mb-1">
+        <div className="flex flex-col items-center justify-center mt-5">
+          <motion.h2
+            className="scroll-section bold-32 mb-1 bg-gradient-1 rounded-2xl shadow-2xl"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.9,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+          >
             MERCHANDISE
             <br />
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="grid grid-cols-12 sm:col-span-6 lg:col-span-3 flex-row justify-between gap-5">
