@@ -53,7 +53,7 @@ const page = () => {
       <div className="max-w-[1440px] mx-auto flex flex-col gap-20 px-4 xl:flex-row">
         <div className="flex flex-col items-center justify-center mt-5">
           <motion.h2
-            className="scroll-section bold-32 mb-1 bg-gradient-1 rounded-2xl shadow-2xl"
+            className="scroll-section bold-32 mb-1"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
