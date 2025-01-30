@@ -49,7 +49,9 @@ const ImageContainer = ({
           right: 0,
           height: 10,
           originX: 0,
-          backgroundColor: "#284AA6",
+          backgroundColor: "#31A9B6",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+          borderRadius: "9999px",
         }}
       />
 
