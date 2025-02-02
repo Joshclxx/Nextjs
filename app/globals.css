@@ -169,7 +169,21 @@ body {
 
 /* Image Container */
 .image-container {
-  @apply flex flex-col items-center p-5 bg-gradient-to-r from-[#6ED9E9] to-[#48BCCA] shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer h-full w-full col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3;
+  @apply flex flex-col items-center p-5 shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer h-full w-full col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #6ED9E9, #48BCCA);
+  /* backdrop-filter: blur(50px);
+  opacity: 0.5; */
+  z-index: -1;
+  border-radius: inherit;
 }
 
 /* Text Button */
@@ -196,3 +210,20 @@ body {
 .text-color {
   @apply text-[#440F3B];
 }
+
+/* Image Background */
+.drink-section {
+  @apply bg-cover bg-center h-screen;
+  background-image: url('/drink-bg1.png');
+}
+
+.food-section {
+  @apply bg-cover bg-center h-screen;
+  background-image: url('/drink-bg.png');
+}
+
+.merch-section {
+  @apply bg-cover bg-center h-screen;
+  background-image: url('/drink-bg.png');
+}
+
